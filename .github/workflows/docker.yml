@@ -23,7 +23,7 @@ jobs:
           GHCR_TOKEN: ${{secrets.GHCR_TOKEN}}
 
       - name: Build
-        run: docker build -t waltertamboer/mailcatcher --file src/Dockerfile .
+        run: docker build -t ghcr.io/waltertamboer/mailcatcher --file src/Dockerfile .
 
       - name: Publish
-        run: docker push waltertamboer/mailcatcher
+        run: docker push ghcr.io/waltertamboer/mailcatcher
